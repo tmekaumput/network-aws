@@ -52,11 +52,11 @@ output "vpc_id" {
 }
 
 output "subnet_public_ids" {
-  value = [aws_subnet.public.*.id]
+  value = aws_subnet.public.*.id
 }
 
 output "subnet_private_ids" {
-  value = [aws_subnet.private.*.id]
+  value = aws_subnet.private.*.id
 }
 
 output "bastion_security_group" {
